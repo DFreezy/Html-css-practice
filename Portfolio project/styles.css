@@ -1,0 +1,112 @@
+/*Entire body*/
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/*Navigation bar*/
+.navbar{
+display: flex;
+flex-direction: row;
+background-color: black;
+}
+
+.navbar ul{
+    margin-left: 220px;
+}
+
+.navbar li{
+list-style-type: none;
+float: left;
+margin-left: 50px;
+margin-right: 50px;
+font-size: 16px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color:aqua;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*heading*/
+#heading{
+    background-color: rgb(200, 210, 200);
+    text-align: center;
+}
+
+#heading img{
+    margin: auto 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/*about section*/
+.about{
+    background-color: antiquewhite;
+    font-size: 30px;
+}
+
+/*skills table*/
+#table-data{
+    border: solid black;
+    text-align: center;
+}
+
+#table-data th{
+    border: solid black;
+}
+
+#table-data td {
+    border: solid lightgray;
+}
+
+/*Form*/
+.portfolio_form{
+    background-color: rgb(205, 225, 124);
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.portfolio_form input{
+    margin: 10px;
+}
+
+.github-logo{
+    margin-right: 50%;
+}
+
+
+.footer{
+    background-color: rgb(80, 80, 80);
+    color: #ffffff;
+}
+
+.footer svg{
+    display: grid;
+  font-size: 3rem;
+  grid-template-rows: repeat(5, 1fr);
+  margin-left: 200px;
+}
